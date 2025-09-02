@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-br from-indigo-100 to-sky-100 dark:from-slate-900 dark:via-slate-800 dark:to-black text-slate-900 dark:text-slate-100;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card {
+  @apply bg-white/80 dark:bg-white/5 rounded-2xl p-4 shadow-lg backdrop-blur;
+}
+
+.search-input {
+  @apply w-full rounded-full px-4 py-2 bg-white/90 dark:bg-white/5 border border-black/10 dark:border-white/10 outline-none;
+}
+
+.poke-img {
+  @apply w-36 h-36 object-contain;
+}
+
+.badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/70 dark:bg-white/10 border border-black/5;
+}
+
+@layer utilities {
+  .dark\:bg-white\/6 {
+    background-color: rgba(255, 255, 255, 0.06);
+  }
+}
